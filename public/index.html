@@ -5,9 +5,31 @@
     <meta charset="utf-8" />
     <title>My Bio Page</title>
 
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
     <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
 </head>
 
 <body>
+    <section id = "intro" class = "d-flex flex-column justify-content-center align-items-center bg-size-cover w-100 vh-100" style="background: linear-gradient(to right, rgb(194, 192, 106), rgb(60, 89, 136))">
+        <div style="position: relative; z-index: 2; min-width: 300px;">
+            <p class="h3 mb-0" style="color:#2e2727ef">Hi, my name is</p>
+            <p class="display-1 fw-bold mb-0" style="color:#2e2727cc">Artem Maksymov<span style="color:#00000000">EmptyPh</span></p>
+            <p class="display-1 fw-bold mb-2" style="color:#2e2727a9">I am a <span class="typed"></span></p>
 
+            <script>
+                var typed = new Typed('.typed', {
+                    strings: ['<em>Student</em>.', '<em>Backend Developer</em>.', '<em>Software Developer.</em>'],
+                    backSpeed: 75,
+                    typeSpeed: 50,
+                    startDelay: 500,
+                    backDelay: 1500,
+                    showCursor: false
+                })
+            </script>
+
+            <p class="h1 fw-bold mt-1 mb-0" style="color:#2e272775">Welcome to my portfolio website!</p>
+        </div>
+    </section>
 </body>
